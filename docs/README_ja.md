@@ -23,6 +23,19 @@
     * **内部的に無限ループで完了を待機するため注意が必要**
   * 依存: `kotlinx-coroutines-core`
 
+## 使い方
+
+```kotlin:build.gradle.kts
+repositories {
+    mavenCentral()
++   maven { url = uri("https://repo.repsy.io/mvn/uakihir0/public") }
+}
+
+dependencies {
++   implementation("work.socialhub:kmpcommon:0.0.1-SNAPSHOT")
+}
+```
+
 ## ライセンス
 
 MIT License

@@ -23,6 +23,19 @@ It is mainly packed with libraries that the author needs, and may not be commonl
         * **Be careful as it internally waits for completion in an infinite loop**
     * Dependency: `kotlinx-coroutines-core`
 
+## Usage
+
+```kotlin:build.gradle.kts
+repositories {
+    mavenCentral()
++   maven { url = uri("https://repo.repsy.io/mvn/uakihir0/public") }
+}
+
+dependencies {
++   implementation("work.socialhub:kmpcommon:0.0.1-SNAPSHOT")
+}
+```
+
 ## License
 
 MIT License
