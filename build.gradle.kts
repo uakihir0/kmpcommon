@@ -17,6 +17,7 @@ kotlin {
     js(IR) {
         binaries.library()
         browser()
+        nodejs()
     }
 
     iosX64()
