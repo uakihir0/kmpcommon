@@ -15,9 +15,10 @@ kotlin {
     jvmToolchain(11)
     jvm { withJava() }
     js(IR) {
-        binaries.library()
-        browser()
         nodejs()
+        browser()
+        binaries.library()
+        generateTypeScriptDefinitions()
     }
 
     iosX64()
