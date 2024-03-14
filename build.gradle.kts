@@ -28,7 +28,7 @@ kotlin {
     macosArm64()
 
     sourceSets {
-        val kotestVersion = "5.8.0"
+        val kotestVersion = "5.8.1"
 
         commonMain.dependencies {
             implementation(kotlin("stdlib"))
